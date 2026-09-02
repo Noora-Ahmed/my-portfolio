@@ -9,104 +9,146 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body class="bg-slate-950 text-white">
-    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+  <body class="bg-slate-950 text-white font-sans">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800 shadow-lg">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 class="text-2xl font-bold text-cyan-400">MyPortfolio</h1>
-
+        <h1 class="text-2xl font-bold text-cyan-400 tracking-wide">MyPortfolio</h1>
         <ul class="flex gap-6 text-sm md:text-base">
-          <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
-          <li><a href="#about" class="hover:text-cyan-400">About</a></li>
-          <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
-          <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+          <li><a href="#hero" class="hover:text-cyan-400 transition">Home</a></li>
+          <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+          <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+          <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Hero -->
     <section id="hero" class="min-h-screen flex items-center justify-center px-6">
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Mariyam Noora Ahmed</span>
+            Hi, I'm <span class="text-cyan-400">Mariyam-Noora-Ahmed</span>
           </h1>
-
           <p class="text-slate-300 text-lg mb-8">
             Finance Management & Business Analytics student passionate about data-driven solutions.
           </p>
-
           <div class="flex gap-4">
-            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
+            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition">
               View Projects
             </a>
-
-            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl">
+            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition">
               Contact Me
             </a>
           </div>
         </div>
-
         <div class="flex justify-center">
-          <img
-            src="assets/professional.jpg"
-            alt="Profile"
-            class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
-          />
+          <img src="assets/professional.jpg" alt="Profile" class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl hover:scale-105 transition" />
         </div>
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="py-24 px-6 bg-slate-900">
       <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
-
         <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I enjoy creating modern websites using HTML, CSS, and Tailwind CSS.
+          I enjoy creating modern websites using HTML, CSS, React, and Tailwind CSS, and applying data analytics to solve real-world problems.
         </p>
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="py-24 px-6">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">
-          Projects
-        </h2>
-
+        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">Projects</h2>
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-1.png" alt="Project" class="w-full h-52 object-cover" />
-
+          
+          <!-- Project 1: Data Analytics Report -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-400/30 transition">
+            <img src="assets/project-1.png" alt="Data Analytics Report" class="w-full h-52 object-cover" />
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Project One</h3>
-
+              <h3 class="text-2xl font-semibold mb-3">Data Analytics Report</h3>
               <p class="text-slate-400 mb-4">
-                A responsive website built using HTML, CSS, and Tailwind.
+                A detailed report created using R Studio, Python Spyder, and Google Colab. Includes statistical analysis, visualizations, and business insights.
               </p>
-
-              <a href="#" class="text-cyan-400 hover:underline">
-                View Project
+              <a href="assets/data-analytics-report.pdf" target="_blank" class="text-cyan-400 hover:underline">
+                View Report
               </a>
             </div>
           </div>
+
+          <!-- Project 2: Websites Portfolio -->
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-400/30 transition">
+            <img src="assets/project-2.png" alt="Websites Portfolio" class="w-full h-52 object-cover" />
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Websites Portfolio</h3>
+              <p class="text-slate-400 mb-4">
+                A collection of responsive websites I built using HTML, CSS, React, and Tailwind CSS. Showcases modern UI design and frontend development skills.
+              </p>
+              <a href="websites.html" class="text-cyan-400 hover:underline">
+                View Websites
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="py-24 px-6 bg-slate-900">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">
-          Contact Me
-        </h2>
-
+        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">Contact Me</h2>
         <form class="space-y-6">
-          <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-slate-800"></textarea>
-
-          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
+          <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+          <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition">
             Send Message
           </button>
         </form>
       </div>
     </section>
-  </body>
-</html>
+
+ <!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-800 py-10 mt-20">
+  <div class="max-w-6xl mx-auto px-6 md:px-20 grid md:grid-cols-3 gap-8 text-center md:text-left">
+    
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4 text-cyan-400">Contact</h3>
+      <p>Email: <a href="mailto:noora@example.com" class="hover:text-cyan-400">noora@example.com</a></p>
+      <p>Phone: <a href="tel:+60123456789" class="hover:text-cyan-400">+60 12-345 6789</a></p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4 text-cyan-400">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4 text-cyan-400">Connect</h3>
+      <div class="flex justify-center md:justify-start space-x-6">
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-cyan-400 transition">
+          LinkedIn
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-cyan-400 transition">
+          Instagram
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" class="hover:text-cyan-400 transition">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-6 border-slate-800">
+  <p class="text-center text-sm text-slate-500">&copy; 2026 Mariyam Noora Ahmed. All rights reserved.</p>
+</footer>
