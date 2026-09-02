@@ -40,11 +40,11 @@
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div class="mt-[-80px]"> <!-- moves text higher -->
           <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Mariyam-Noora-Ahmed</span>
+            Hi, I'm <span class="text-cyan-400">Mariyam Noora Ahmed</span>
           </h1>
           <p id="greeting" class="text-slate-300 text-lg mb-4 font-semibold"></p>
           <p class="text-slate-300 text-lg mb-8">
-            Finance Management & Business Analytics student passionate about data-driven solutions.
+           Business management and analytics enthusiast, passionate about creating websites and uncovering financial insights.
           </p>
           <div class="flex gap-4">
             <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition">
@@ -72,19 +72,73 @@
       </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="py-24 px-6">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">Education</h2>
-        <div class="space-y-8">
-          <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-slate-800">
-            <h3 class="text-2xl font-semibold text-cyan-400">Nottingham University Business School</h3>
-            <p class="text-slate-300 mt-2">Undergraduate in Finance Management & Business Analytics (2023–2026)</p>
-            <p class="text-slate-400 mt-2">Coursework includes Time Series Analysis, Data Visualization, and Applied Statistics.</p>
-          </div>
-        </div>
+   <!-- Education Background -->
+<section id="education" class="py-24 px-6 bg-slate-900">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12 text-cyan-400">Education Background</h2>
+    
+    <div class="space-y-6">
+      
+      <!-- Bachelor -->
+      <div onclick="document.getElementById('bachelor-cert').classList.toggle('hidden')" 
+           class="bg-slate-800 rounded-xl shadow-lg p-6 cursor-pointer hover:bg-slate-700 transition">
+        <h3 class="text-2xl font-semibold text-cyan-400">Bachelor in Finance Management & Business Analytics</h3>
+        <p class="text-slate-300 mt-2">Nottingham University Business School</p>
+        <p class="text-slate-400 mt-2">Expected Graduation: 2027</p>
       </div>
-    </section>
+      <div id="bachelor-cert" class="hidden mt-4">
+        <a href="Bachelor-Certificate.pdf" target="_blank" 
+           class="inline-block bg-cyan-400 text-black px-4 py-2 rounded hover:bg-cyan-500">
+          View Certificate (PDF)
+        </a>
+      </div>
+
+      <!-- Diploma -->
+      <div onclick="document.getElementById('diploma-cert').classList.toggle('hidden')" 
+           class="bg-slate-800 rounded-xl shadow-lg p-6 cursor-pointer hover:bg-slate-700 transition">
+        <h3 class="text-2xl font-semibold text-cyan-400">Diploma in Business Management</h3>
+        <p class="text-slate-300 mt-2">University of Nottingham Malaysia</p>
+        <p class="text-slate-400 mt-2">Graduated: 2025</p>
+      </div>
+      <div id="diploma-cert" class="hidden mt-4">
+        <a href="Diploma-Certificate.pdf" target="_blank" 
+           class="inline-block bg-cyan-400 text-black px-4 py-2 rounded hover:bg-cyan-500">
+          View Certificate (PDF)
+        </a>
+      </div>
+
+      <!-- Higher Secondary -->
+      <div onclick="document.getElementById('highersecondary-cert').classList.toggle('hidden')" 
+           class="bg-slate-800 rounded-xl shadow-lg p-6 cursor-pointer hover:bg-slate-700 transition">
+        <h3 class="text-2xl font-semibold text-cyan-400">Higher Secondary School Certificate</h3>
+        <p class="text-slate-300 mt-2">Dhaandhoo School</p>
+        <p class="text-slate-400 mt-2">Graduated: 2023</p>
+      </div>
+      <div id="highersecondary-cert" class="hidden mt-4">
+        <a href="HigherSecondary-Certificate.pdf" target="_blank" 
+           class="inline-block bg-cyan-400 text-black px-4 py-2 rounded hover:bg-cyan-500">
+          View Certificate (PDF)
+        </a>
+      </div>
+
+      <!-- Secondary School -->
+      <div onclick="document.getElementById('secondary-cert').classList.toggle('hidden')" 
+           class="bg-slate-800 rounded-xl shadow-lg p-6 cursor-pointer hover:bg-slate-700 transition">
+        <h3 class="text-2xl font-semibold text-cyan-400">Secondary School Certificate</h3>
+        <p class="text-slate-300 mt-2">Dhaandhoo School</p>
+        <p class="text-slate-400 mt-2">Graduated: 2020</p>
+      </div>
+      <div id="secondary-cert" class="hidden mt-4">
+        <a href="Secondary-Certificate.pdf" target="_blank" 
+           class="inline-block bg-cyan-400 text-black px-4 py-2 rounded hover:bg-cyan-500">
+          View Certificate (PDF)
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Projects -->
     <section id="projects" class="py-24 px-6">
