@@ -7,6 +7,23 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Dynamic Greeting Script -->
+    <script>
+      function showGreeting() {
+        const hour = new Date().getHours();
+        let greeting;
+        if (hour < 12) {
+          greeting = "Good Morning 🌞";
+        } else if (hour < 18) {
+          greeting = "Good Afternoon ☀️";
+        } else {
+          greeting = "Good Evening 🌙";
+        }
+        document.getElementById("greeting").innerText = greeting;
+      }
+      window.onload = showGreeting;
+    </script>
   </head>
 
   <body class="bg-slate-950 text-white font-sans">
@@ -14,22 +31,18 @@
     <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800 shadow-lg">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <h1 class="text-2xl font-bold text-cyan-400 tracking-wide">MyPortfolio</h1>
-        <ul class="flex gap-6 text-sm md:text-base">
-          <li><a href="#hero" class="hover:text-cyan-400 transition">Home</a></li>
-          <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
-          <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
-          <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
-        </ul>
+        <!-- Removed right-side nav links -->
       </nav>
     </header>
 
     <!-- Hero -->
     <section id="hero" class="min-h-screen flex items-center justify-center px-6">
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
+        <div class="mt-[-80px]"> <!-- moves text higher -->
           <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
             Hi, I'm <span class="text-cyan-400">Mariyam-Noora-Ahmed</span>
           </h1>
+          <p id="greeting" class="text-slate-300 text-lg mb-4 font-semibold"></p>
           <p class="text-slate-300 text-lg mb-8">
             Finance Management & Business Analytics student passionate about data-driven solutions.
           </p>
@@ -53,8 +66,23 @@
       <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
         <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I enjoy creating modern websites using HTML, CSS, React, and Tailwind CSS, and applying data analytics to solve real-world problems.
+          I enjoy creating modern websites using HTML, CSS, React, and Tailwind CSS.  
+          I am also deeply interested in data analytics, using R and Python to uncover insights and solve business problems.
         </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-24 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">Education</h2>
+        <div class="space-y-8">
+          <div class="bg-slate-900 p-6 rounded-xl shadow-lg border border-slate-800">
+            <h3 class="text-2xl font-semibold text-cyan-400">Nottingham University Business School</h3>
+            <p class="text-slate-300 mt-2">Undergraduate in Finance Management & Business Analytics (2023–2026)</p>
+            <p class="text-slate-400 mt-2">Coursework includes Time Series Analysis, Data Visualization, and Applied Statistics.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -68,7 +96,7 @@
           <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-400/30 transition">
             <img src="assets/project-1.png" alt="Data Analytics Report" class="w-full h-52 object-cover" />
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Data Analytics Report</h3>
+              <h3 class="text-2xl font-semibold mb-3">Data Analytics Reports</h3>
               <p class="text-slate-400 mb-4">
                 A detailed report created using R Studio, Python Spyder, and Google Colab. Includes statistical analysis, visualizations, and business insights.
               </p>
@@ -111,20 +139,19 @@
       </div>
     </section>
 
- <!-- Footer -->
-<footer class="bg-slate-950 border-t border-slate-800 py-10 mt-20">
-  <div class="max-w-6xl mx-auto px-6 md:px-20 grid md:grid-cols-3 gap-8 text-center md:text-left">
-    
-    <!-- Contact Info -->
-    <div>
-      <h3 class="text-lg font-semibold mb-4 text-cyan-400">Contact</h3>
-      <p>Email: <a href="mailto:noora@example.com" class="hover:text-cyan-400">mariyamnooraahmed@gmail.com</a></p>
-      
-    </div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-10 mt-20">
+      <div class="max-w-6xl mx-auto px-6 md:px-20 grid md:grid-cols-3 gap-8 text-center md:text-left">
+        
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-cyan-400">Contact</h3>
+          <p>Email: <a href="mailto:mariyamnooraahmed@gmail.com" class="hover:text-cyan-400">mariyamnooraahmed@gmail.com</a></p>
+        </div>
 
-    <!-- Quick Links -->
-    <div>
-      <h3 class="text-lg font-semibold mb-4 text-cyan-400">Quick Links</h3>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-cyan-400">Quick Links</h3>
       <ul class="space-y-2">
         <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
         <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
@@ -139,7 +166,7 @@
         <a href="https://www.linkedin.com/in/noorahmed926/" target="_blank" class="hover:text-cyan-400 transition">
           LinkedIn
         </a>
-        <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-cyan-400 transition">
+        <a href="https://www.linkedin.com/in/noorahmed926?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="hover:text-cyan-400 transition">
           Instagram
         </a>
       </div>
