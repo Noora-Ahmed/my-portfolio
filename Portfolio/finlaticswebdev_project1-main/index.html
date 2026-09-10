@@ -31,25 +31,21 @@
     <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800 shadow-lg">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <h1 class="text-2xl font-bold text-cyan-400 tracking-wide">MyPortfolio</h1>
-        <!-- Removed right-side nav links -->
       </nav>
     </header>
 
    <!-- Hero -->
 <section id="hero" class="min-h-screen flex items-center justify-center px-6">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-    <div class="mt-[-80px]"> <!-- moves text higher -->
-      <!-- Welcome line -->
+    <div class="mt-[-80px]">
       <p class="text-slate-400 text-lg mb-2">Hi, welcome to my portfolio 👋</p>
 
       <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
         I'm <span class="text-cyan-400">Mariyam Noora Ahmed</span>
       </h1>
 
-      <!-- Dynamic greeting -->
       <p id="greeting" class="text-slate-300 text-lg mb-4 font-semibold"></p>
 
-      <!-- Tagline -->
       <p class="text-slate-300 text-lg mb-8">
         Web development & finance analytics enthusiast, passionate about building modern websites and uncovering data-driven business insights.
       </p>
@@ -70,7 +66,6 @@
   </div>
 </section>
 
-
     <!-- About -->
     <section id="about" class="py-24 px-6 bg-slate-900">
       <div class="max-w-5xl mx-auto text-center">
@@ -82,55 +77,80 @@
       </div>
     </section>
 
-    <!-- Education Background -->
+    <!-- Education & Certificates (Split Layout) -->
     <section id="education" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12 text-cyan-400">Education Background</h2>
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
 
-        <div class="space-y-6">
+          <!-- Left: Education Background -->
+          <div>
+            <h2 class="text-3xl font-bold mb-10 text-cyan-400 text-center md:text-left">Education Background</h2>
+            <div class="space-y-6">
 
-          <!-- Bachelor -->
-          <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
-            <h3 class="text-2xl font-semibold text-cyan-400">Bachelor in Finance Management & Business Analytics</h3>
-            <p class="text-slate-300 mt-2">Nottingham University Business School</p>
-            <p class="text-slate-400 mt-2">Expected Graduation: 2027</p>
+              <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
+                <h3 class="text-xl font-semibold text-cyan-400">Bachelor in Finance Management & Business Analytics</h3>
+                <p class="text-slate-300 mt-2">Nottingham University Business School</p>
+                <p class="text-slate-400 mt-2">Expected Graduation: 2027</p>
+              </div>
+
+              <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
+                <h3 class="text-xl font-semibold text-cyan-400">Diploma in Business Management</h3>
+                <p class="text-slate-300 mt-2">University of Nottingham Malaysia</p>
+                <p class="text-slate-400 mt-2">Graduated: 2025</p>
+              </div>
+
+              <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
+                <h3 class="text-xl font-semibold text-cyan-400">Higher Secondary School Certificate</h3>
+                <p class="text-slate-300 mt-2">Dhaandhoo School</p>
+                <p class="text-slate-400 mt-2">Graduated: 2023</p>
+              </div>
+
+              <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
+                <h3 class="text-xl font-semibold text-cyan-400">Secondary School Certificate</h3>
+                <p class="text-slate-300 mt-2">Dhaandhoo School</p>
+                <p class="text-slate-400 mt-2">Graduated: 2020</p>
+              </div>
+
+            </div>
           </div>
 
-          <!-- Diploma -->
-          <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
-            <h3 class="text-2xl font-semibold text-cyan-400">Diploma in Business Management</h3>
-            <p class="text-slate-300 mt-2">University of Nottingham Malaysia</p>
-            <p class="text-slate-400 mt-2">Graduated: 2025</p>
-          </div>
+          <!-- Right: Certificates -->
+          <div>
+            <h2 class="text-3xl font-bold mb-10 text-cyan-400 text-center md:text-left">Certificates</h2>
+            <div class="space-y-6">
 
-          <!-- Higher Secondary -->
-          <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
-            <h3 class="text-2xl font-semibold text-cyan-400">Higher Secondary School Certificate</h3>
-            <p class="text-slate-300 mt-2">Dhaandhoo School</p>
-            <p class="text-slate-400 mt-2">Graduated: 2023</p>
-          </div>
+              <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-cyan-400/30 transition">
+                <h3 class="text-xl font-semibold text-cyan-400 mb-2">Finlatics Data Science & Business Analytics</h3>
+                <p class="text-slate-400 mb-3">Completed specialized training in data science and business analytics, focusing on practical applications.</p>
+                <a href="assets/finlatics-datascience.pdf" target="_blank" class="text-cyan-400 hover:underline">View Certificate</a>
+              </div>
 
-          <!-- Secondary School -->
-          <div class="bg-slate-800 rounded-xl shadow-lg p-6 hover:bg-slate-700 transition">
-            <h3 class="text-2xl font-semibold text-cyan-400">Secondary School Certificate</h3>
-            <p class="text-slate-300 mt-2">Dhaandhoo School</p>
-            <p class="text-slate-400 mt-2">Graduated: 2020</p>
+              <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-cyan-400/30 transition">
+                <h3 class="text-xl font-semibold text-cyan-400 mb-2">Finlatics Upskilling Program</h3>
+                <p class="text-slate-400 mb-3">Focused on enhancing business and analytical skills through structured modules.</p>
+                <a href="assets/finlatics-upskilling.pdf" target="_blank" class="text-cyan-400 hover:underline">View Certificate</a>
+              </div>
+
+              <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-lg hover:shadow-cyan-400/30 transition">
+                <h3 class="text-xl font-semibold text-cyan-400 mb-2">Web Development Course</h3>
+                <p class="text-slate-400 mb-3">Learned modern web development practices including HTML, CSS, React, and Tailwind CSS.</p>
+                <a href="assets/webdev-certificate.pdf" target="_blank" class="text-cyan-400 hover:underline">View Certificate</a>
+              </div>
+
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-
    <!-- Projects -->
 <section id="projects" class="py-24 px-6">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">Projects</h2>
     
-    <!-- Changed grid to 2 columns -->
     <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
       
-      <!-- Project 1: Data Analytics Report -->
       <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-400/30 transition">
         <img src="assets/project-1.png" alt="Data Analytics Report" class="w-full h-52 object-cover" />
         <div class="p-6">
@@ -144,7 +164,6 @@
         </div>
       </div>
 
-      <!-- Project 2: Websites Portfolio -->
       <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-cyan-400/30 transition">
         <img src="assets/project-2.png" alt="Websites Portfolio" class="w-full h-52 object-cover" />
         <div class="p-6">
@@ -181,13 +200,11 @@
     <footer class="bg-slate-950 border-t border-slate-800 py-10 mt-20">
       <div class="max-w-6xl mx-auto px-6 md:px-20 grid md:grid-cols-3 gap-8 text-center md:text-left">
         
-        <!-- Contact Info -->
         <div>
           <h3 class="text-lg font-semibold mb-4 text-cyan-400">Contact</h3>
           <p>Email: <a href="mailto:mariyamnooraahmed@gmail.com" class="hover:text-cyan-400">mariyamnooraahmed@gmail.com</a></p>
         </div>
 
-        <!-- Quick Links -->
         <div>
           <h3 class="text-lg font-semibold mb-4 text-cyan-400">Quick Links</h3>
       <ul class="space-y-2">
@@ -197,7 +214,6 @@
       </ul>
     </div>
 
-    <!-- Social Media -->
     <div>
       <h3 class="text-lg font-semibold mb-4 text-cyan-400">Connect</h3>
       <div class="flex justify-center md:justify-start space-x-6">
